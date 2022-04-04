@@ -3,4 +3,4 @@ default: run
 
 .PHONY:
 run:
-	elixir lib/servy.ex
+	elixir lib/servy/handler.ex
