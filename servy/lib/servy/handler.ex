@@ -25,5 +25,12 @@ defmodule Servy.Handler do
   end
 end
 
-response = Servy.Handler.handle("")
+request = """
+GET /wildthings HTTP/1.1
+Host: example.com
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X)
+Accept: */*
+
+"""
+response = Servy.Handler.handle(request)
 IO.puts(response)
